@@ -149,6 +149,7 @@ public class MainActivity extends AppCompatActivity {
 
         //custom alertDialog
         final Dialog doneDialog = new Dialog (context);
+        doneDialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
         doneDialog.setContentView(R.layout.custom_dialog);
         Button dialogButton = (Button) doneDialog.findViewById(R.id.dialog_button);
         dialogButton.setOnClickListener(new View.OnClickListener() {
